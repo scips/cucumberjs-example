@@ -1,0 +1,28 @@
+{
+  "name": "cucumberjs-example",
+  "version": "0.0.0",
+  "description": "cucumberjs-example\r ==================",
+  "main": "index.html",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-connect": "~0.7.1"
+  },
+  "devDependencies": {
+    "grunt-coffeelint": "0.0.8",
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scips/cucumberjs-example.git"
+  },
+  "author": "Sébastien Barbieri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scips/cucumberjs-example/issues"
+  },
+  "homepage": "https://github.com/scips/cucumberjs-example"
+}
