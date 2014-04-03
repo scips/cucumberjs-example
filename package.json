@@ -10,7 +10,9 @@
   "devDependencies": {
     "grunt-coffeelint": "0.0.8",
     "grunt-contrib-coffee": "^0.10.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-webdriver": "^0.3.3",
+    "wd": "^0.2.14"
   },
   "scripts": {
     "test": "test"
