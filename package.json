@@ -11,8 +11,10 @@
     "grunt-coffeelint": "0.0.8",
     "grunt-contrib-coffee": "^0.10.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-webdriver": "^0.3.3",
-    "wd": "^0.2.14"
+    "wd": "^0.2.14",
+    "grunt-cucumber": "^0.2.3",
+    "grunt-exec": "^0.4.5",
+    "grunt-selenium-webdriver": "^0.2.392"
   },
   "scripts": {
     "test": "test"

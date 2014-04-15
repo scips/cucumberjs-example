@@ -1,10 +1,15 @@
 stepDefinitionScreen1 = ()->
   @World = require('../support/world').World
 
+  @Before (callback)->
+    console.log "BEFORE"
+    callback()
+
   @Given /^I am launching the application$/, (callback) ->
     # express the regexp above with the code you wish you had
     @browser.init ()=>
       @browser.get 'http://127.0.0.1:9001/', callback
+    .setAsyncScriptTimeout(30000)
 
   @Then /^I should see "([^"]*)" after maximum "([^"]*)" seconds$/,
     (selector, timeout, callback) ->
@@ -12,11 +17,12 @@ stepDefinitionScreen1 = ()->
         "document.querySelector('#{selector}').style.display == 'block'",
         timeout*1000, 250, (err, el)->
           if err
+            console.log(err)
             callback.fail()
           else
             callback()
         )
-
+###
   @Given /^I am on "([^"]*)"$/, (selector, callback) ->
     timeout = 5
     console.log "testing selector (#{selector}):"
@@ -50,6 +56,6 @@ stepDefinitionScreen1 = ()->
         callback()
       else
         callback.fail()
-
+###
 
 module.exports = stepDefinitionScreen1
