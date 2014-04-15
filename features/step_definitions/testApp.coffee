@@ -9,7 +9,6 @@ stepDefinitionScreen1 = ()->
     # express the regexp above with the code you wish you had
     @browser.init ()=>
       @browser.get 'http://127.0.0.1:9001/', callback
-    .setAsyncScriptTimeout(30000)
 
   @Then /^I should see "([^"]*)" after maximum "([^"]*)" seconds$/,
     (selector, timeout, callback) ->
